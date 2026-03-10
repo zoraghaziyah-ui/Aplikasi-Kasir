@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kasir App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Aplikasi Kasir</h2>
+
+    <input type="text" id="namaBarang" placeholder="Nama Barang">
+    <input type="number" id="harga" placeholder="Harga">
+    <input type="number" id="qty" placeholder="Qty">
+
+    <div class="button-group">
+      <button onclick="tambahBarang()">Tambah</button>
+      <button onclick="resetSemua()" class="reset">Reset</button>
+    </div>
+
+    <table id="tabel">
+      <thead>
+        <tr>
+          <th>Barang</th>
+          <th>Harga</th>
+          <th>Qty</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="listBarang"></tbody>
+    </table>
+
+    <h3 id="total">Total: Rp 0</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
